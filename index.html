@@ -19,39 +19,50 @@
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 </head>
 <body>
-	<header>
-		<h1>University of Sheffield Degree Classifier</h1>
-	</header>
-	<section id="courseLength">
-		<h2>How long is your course?</h2>
-		<label><input checked="checked" type="radio" name="courseLength" value="3" /> 3 Years</label>
-		<label><input type="radio" name="courseLength" value="4" /> 4 Years with an Integrated Masters</label>
-	</section>
-	<section id="moduleResults">
-		<h2>Your Module Results:</h2>
-		<h3>Year 2<span class="average2"></span></h3>
-		<article id="2">
-			<button class="addModule button">Add a Module</button>
-			<div class="error"></div>
-		</article>
-		<h3>Year 3<span class="average3"></span></h3>
-		<article id="3">
-			<button class="addModule button">Add a Module</button>
-			<div class="error"></div>
-		</article>
-		<h3 class="4">Year 4<span class="average4"></span></h3>
-		<article class="4" id="4">
-			<button class="addModule button">Add a Module</button>
-			<div class="error"></div>
-		</article>
-	</section>
-	<section id="classification">
-		<h2>Your Classification:</h2>
-		<h3>First</h3>
-		<div id="detail"></div>
-	</section>
-	<footer>
-		Developed by Paul MacDonald
-	</footer>
+	<div id='container'>
+		<header>
+			<h1>University of Sheffield Degree Classifier</h1>
+		</header>
+		<section id="courseLength">
+			<h2>How long is your course?</h2>
+			<label><input checked="checked" type="radio" name="courseLength" value="3" /> 3 Years</label>
+			<label><input type="radio" name="courseLength" value="4" /> 4 Years with an Integrated Masters</label>
+		</section>
+		<section id="moduleResults">
+			<h2>Your Module Results:</h2>
+			<h3>Year 2<span class="average2"></span></h3>
+			<article id="2">
+				<button class="addModule button">Add a Module</button>
+				<div class="error"></div>
+			</article>
+			<h3>Year 3<span class="average3"></span></h3>
+			<article id="3">
+				<button class="addModule button">Add a Module</button>
+				<div class="error"></div>
+			</article>
+			<h3 class="4">Year 4<span class="average4"></span></h3>
+			<article class="4" id="4">
+				<button class="addModule button">Add a Module</button>
+				<div class="error"></div>
+			</article>
+		</section>
+		<section id="classification">
+			<h2>Your Classification:</h2>
+			<h3>First</h3>
+			<div id="detail"></div>
+		</section>
+		<footer>
+			<div id='footerText'>
+				<a class='hvr-underline-from-center' target="_blank" href='http://paul-macdonald.co.uk'>
+					Developed by Paul MacDonald.
+				</a>
+			</div>
+			<div id='github'>
+			<a class='hvr-underline-from-center' target="_blank" href="https://github.com/paulrm6/degreeclassifier">
+				<i class="fa fa-github" aria-hidden="true"></i>
+				View this project on GitHub.
+			</a>
+		</footer>
+	</div>
 </body>
 </html>

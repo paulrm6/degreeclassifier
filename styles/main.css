@@ -3,26 +3,22 @@ html,body {
 }
 
 h1 {
-	width: 700px;
-	margin: 5px auto 0;
+	margin: 5px 0 0 0;
 	font-size: 140%;
 	font-weight: 700;
 }
 
 h2 {
-	width: 700px;
-	margin: 10px auto;
+	margin: 10px 0;
 	font-size: 120%;
 	font-style: italic;
 }
 
 h3 {
-	width: 700px;
-	margin: 0 auto;
 	font-weight: 700;
 }
 
-section {
+header, section, footer {
 	width: 700px;
 	margin: 0 auto;
 }
@@ -212,4 +208,78 @@ strong { font-weight: bold; }
 	display:none;
 	padding-left: 10px;
 	border-left:3px solid white;
+}
+
+footer {
+	font-size: 90%;
+	padding-top: 10px;
+	display: flex;
+}
+
+#footerText {
+	flex:1;
+	transition: all ease 0.2s; 
+}
+
+#github {
+	flex: 1;
+	text-align: right;
+}
+
+footer a {
+	text-decoration: none;
+	color: inherit;
+}
+
+
+/*!
+ * Hover.css (http://ianlunn.github.io/Hover/)
+ * Version: 2.0.2
+ * Author: Ian Lunn @IanLunn
+ * Author URL: http://ianlunn.co.uk/
+ * Github: https://github.com/IanLunn/Hover
+
+ * Made available under a MIT License:
+ * http://www.opensource.org/licenses/mit-license.php
+
+ * Hover.css Copyright Ian Lunn 2014. Generated with Sass.
+ */
+ /* Underline From Center */
+ .hvr-underline-from-center {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-center:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  background: black;
+  height: 1px;
+  -webkit-transition-property: left, right;
+  transition-property: left, right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+  left: 0;
+  right: 0;
+}
+#buffer {
+  width:100%;
+  height:55px;
+  background: white;
+  display:none;
 }
