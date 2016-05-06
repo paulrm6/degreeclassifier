@@ -124,7 +124,7 @@ input:focus,input:focus+.percentSymbol {
 
 .addModule {
 	background-color: #0092cc;
-	margin: 0 0 5px 5px;
+	margin: 5px 0 5px 5px;
 }
 
 .addModule:hover {
