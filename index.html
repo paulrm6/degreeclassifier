@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Paul MacDonald">
+	<meta name="keywords" content="Sheffield,Degree,Classification,Grade,Results,Calculator">
+	<meta name="description" content="A web application to calculate you degree classification from your module marks at Sheffield University">
+	<link href="http://meyerweb.com/eric/tools/css/reset/reset.css" rel="stylesheet">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="javascript/calculator.js"></script>
+	<title>UoS Degree Classifier</title>
+	<script type="text/javascript" src="javascript/cookie.js"></script>
+	<script type="text/javascript" src="javascript/store.js"></script>
+	<script type="text/javascript" src="javascript/modules.js"></script>
+	<link href="styles/cookie.css" rel="stylesheet">
+	<link href="styles/main.css" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<header>
+		<h1>University of Sheffield Degree Classifier</h1>
+	</header>
+	<section id="courseLength">
+		<h2>How long is your course?</h2>
+		<label><input checked="checked" type="radio" name="courseLength" value="3" /> 3 Years</label>
+		<label><input type="radio" name="courseLength" value="4" /> 4 Years with an Integrated Masters</label>
+	</section>
+	<section id="moduleResults">
+		<h2>Your Module Results:</h2>
+		<h3>Year 2<span class="average2"></span></h3>
+		<article id="2">
+			<button class="addModule button">Add a Module</button>
+			<div class="error"></div>
+		</article>
+		<h3>Year 3<span class="average3"></span></h3>
+		<article id="3">
+			<button class="addModule button">Add a Module</button>
+			<div class="error"></div>
+		</article>
+		<h3 class="4">Year 4<span class="average4"></span></h3>
+		<article class="4" id="4">
+			<button class="addModule button">Add a Module</button>
+			<div class="error"></div>
+		</article>
+	</section>
+	<section id="classification">
+		<h2>Your Classification:</h2>
+		<h3>First</h3>
+		<div id="detail"></div>
+	</section>
+	<footer>
+		Developed by Paul MacDonald
+	</footer>
+</body>
+</html>

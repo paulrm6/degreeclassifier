@@ -1,0 +1,37 @@
+#cookies {
+	position: fixed;
+	bottom:0;
+	width:calc(100% - 20px);
+	background-color: rgba(40,39,39,0.9);
+	color:white;
+	padding:10px;
+}
+#cookies #cookieBtns{
+	display: inline-block;
+	text-align: right;
+	width:30%;
+}
+#cookies #cookieY,#cookies #cookieN{
+	transition: all ease 0.5s;
+	display: inline-block;
+	padding:5px;
+	cursor: pointer;
+	border-radius: 5px;
+}
+#cookies #cookieText {
+	width:70%;
+	display: inline-block;
+}
+#cookies #cookieY {
+	background-color: #2CB01C;
+}
+#cookies #cookieN {
+	background-color: #b01c2b;
+	margin-left: 10px;
+}
+#cookies #cookieY:hover {
+	background-color: #0a8300;
+}
+#cookies #cookieN:hover {
+	background-color: #83000b;
+}
