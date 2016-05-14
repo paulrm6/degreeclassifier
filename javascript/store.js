@@ -6,10 +6,10 @@ $(document).ready(function() {
 				var module = modules[i];
 				insertModule(module);
 				if(module.assessments && module.assessments.length!==0) {
+					openAssessments($('#'+module.year+" .splitButton").last());
 					for(var j=0; j<module.assessments.length;j++) {
 						insertAssessment($('#'+module.year+" .splitButton").last(),module.assessments[j]);
 					}
-					openAssessments($('#'+module.year+" .splitButton").last());
 				}
 			}
 		}
